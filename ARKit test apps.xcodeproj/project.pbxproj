@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		8480CA72205171CF0032C941 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480CA71205171CF0032C941 /* AppDelegate.swift */; };
-		8480CA74205171CF0032C941 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480CA73205171CF0032C941 /* ViewController.swift */; };
-		8480CA77205171CF0032C941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8480CA75205171CF0032C941 /* Main.storyboard */; };
 		8480CA79205171CF0032C941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8480CA78205171CF0032C941 /* Assets.xcassets */; };
 		8480CA7C205171CF0032C941 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8480CA7A205171CF0032C941 /* LaunchScreen.storyboard */; };
+		8480CA852051724F0032C941 /* Section3WorldTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480CA842051724F0032C941 /* Section3WorldTrackingViewController.swift */; };
+		8480CA872051725F0032C941 /* Section3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8480CA862051725F0032C941 /* Section3.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8480CA6E205171CF0032C941 /* ARKit test apps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARKit test apps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8480CA71205171CF0032C941 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8480CA73205171CF0032C941 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8480CA76205171CF0032C941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8480CA78205171CF0032C941 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8480CA7B205171CF0032C941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8480CA7D205171CF0032C941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8480CA842051724F0032C941 /* Section3WorldTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section3WorldTrackingViewController.swift; sourceTree = "<group>"; };
+		8480CA862051725F0032C941 /* Section3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Section3.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +55,21 @@
 			isa = PBXGroup;
 			children = (
 				8480CA71205171CF0032C941 /* AppDelegate.swift */,
-				8480CA73205171CF0032C941 /* ViewController.swift */,
-				8480CA75205171CF0032C941 /* Main.storyboard */,
+				8480CA83205171E40032C941 /* Section 3 */,
 				8480CA78205171CF0032C941 /* Assets.xcassets */,
 				8480CA7A205171CF0032C941 /* LaunchScreen.storyboard */,
 				8480CA7D205171CF0032C941 /* Info.plist */,
 			);
 			path = "ARKit test apps";
+			sourceTree = "<group>";
+		};
+		8480CA83205171E40032C941 /* Section 3 */ = {
+			isa = PBXGroup;
+			children = (
+				8480CA842051724F0032C941 /* Section3WorldTrackingViewController.swift */,
+				8480CA862051725F0032C941 /* Section3.storyboard */,
+			);
+			path = "Section 3";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +133,7 @@
 			files = (
 				8480CA7C205171CF0032C941 /* LaunchScreen.storyboard in Resources */,
 				8480CA79205171CF0032C941 /* Assets.xcassets in Resources */,
-				8480CA77205171CF0032C941 /* Main.storyboard in Resources */,
+				8480CA872051725F0032C941 /* Section3.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8480CA74205171CF0032C941 /* ViewController.swift in Sources */,
+				8480CA852051724F0032C941 /* Section3WorldTrackingViewController.swift in Sources */,
 				8480CA72205171CF0032C941 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,14 +152,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8480CA75205171CF0032C941 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8480CA76205171CF0032C941 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8480CA7A205171CF0032C941 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
