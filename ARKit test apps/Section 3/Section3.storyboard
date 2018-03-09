@@ -10,16 +10,58 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Section3 World Tracking View Controller-->
+        <!--Section3 View Controller-->
         <scene sceneID="JhR-O5-Sxa">
             <objects>
-                <viewController id="GHA-sL-B3W" customClass="Section3WorldTrackingViewController" customModule="ARKit_test_apps" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GHA-sL-B3W" customClass="Section3ViewController" customModule="ARKit_test_apps" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qgk-7G-8d8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AYk-BK-z07">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8p1-md-rTN">
+                                <rect key="frame" x="20" y="567" width="80" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="gyR-VX-QyS"/>
+                                    <constraint firstAttribute="width" constant="80" id="kq1-Fx-0aD"/>
+                                </constraints>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addButtonPressed:" destination="GHA-sL-B3W" eventType="touchUpInside" id="8gW-3E-yZt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha6-Md-xtE">
+                                <rect key="frame" x="275" y="567" width="80" height="80"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Ffb-NJ-IOe"/>
+                                    <constraint firstAttribute="height" constant="80" id="e7X-5e-eph"/>
+                                </constraints>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButtonPressed:" destination="GHA-sL-B3W" eventType="touchUpInside" id="Ukk-TD-ZfG"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ha6-Md-xtE" secondAttribute="bottom" constant="20" id="9I7-w9-qJ2"/>
+                            <constraint firstAttribute="bottom" secondItem="8p1-md-rTN" secondAttribute="bottom" constant="20" id="Bf7-2t-Y79"/>
+                            <constraint firstItem="8p1-md-rTN" firstAttribute="leading" secondItem="Qgk-7G-8d8" secondAttribute="leading" constant="20" id="QUJ-bj-FIQ"/>
+                            <constraint firstAttribute="trailing" secondItem="AYk-BK-z07" secondAttribute="trailing" id="bEB-r0-vQp"/>
+                            <constraint firstAttribute="trailing" secondItem="ha6-Md-xtE" secondAttribute="trailing" constant="20" id="cmn-dm-SeO"/>
+                            <constraint firstAttribute="bottom" secondItem="AYk-BK-z07" secondAttribute="bottom" id="naZ-zo-Gko"/>
+                            <constraint firstItem="AYk-BK-z07" firstAttribute="top" secondItem="Qgk-7G-8d8" secondAttribute="top" id="xTl-FY-A3g"/>
+                            <constraint firstItem="AYk-BK-z07" firstAttribute="leading" secondItem="Qgk-7G-8d8" secondAttribute="leading" id="xuc-XW-sZ8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Gah-eZ-6vs"/>
                     </view>
+                    <connections>
+                        <outlet property="sceneView" destination="AYk-BK-z07" id="oCA-Ny-n7U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EGb-gi-Pfx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
